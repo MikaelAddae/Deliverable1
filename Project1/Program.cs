@@ -1,5 +1,8 @@
 ﻿using System;
 
+namespace Deliverable1
+{
+
 public class Program
 {
     public static void Main()
@@ -14,7 +17,7 @@ public class Program
             int sodanow = soda - sodasold;
             if (sodanow >= 0) {
                 Console.WriteLine("There are now " + sodanow);
-            } else 
+            } else
             {
                 Console.WriteLine("Whoops! Thats not possible. There are still " + soda);
             }
@@ -23,34 +26,34 @@ public class Program
             int chipssold = int.Parse(Console.ReadLine());
             int chipsnow = chips - chipssold;
             if (chipsnow >= 0) {
-                    Console.WriteLine("There are now " + chipsnow);
+                Console.WriteLine("There are now " + chipsnow);
             } else
-              {
-                 Console.WriteLine("Whoops! Thats not possible. There are still" + chips);
-              }
-            
-            
+            {
+                Console.WriteLine("Whoops! Thats not possible. There are still" + chips);
+            }
+
+
             int candy = 60;
             Console.WriteLine("How much candy was sold today? There was " + candy);
             int candysold = int.Parse(Console.ReadLine());
             int candynow = candy - candysold;
             if (candynow >= 0)
             {
-                    Console.WriteLine("There are now " + candynow);
+                Console.WriteLine("There are now " + candynow);
             } else
-                {
-                    Console.WriteLine("Whoops! Thats not possible. There are still" + candy);
-                }
-            
+            {
+                Console.WriteLine("Whoops! Thats not possible. There are still" + candy);
+            }
+
             Console.WriteLine("Thank you for entering the sales.");
             int sodalow = 40;
             int candylow = 30;
             int chipslow = 20;
-            Console.WriteLine ("These items need to be restocked");
+            Console.WriteLine("These items need to be restocked");
             if (sodanow >= 0 && sodanow <= sodalow)
-                {
-                    Console.WriteLine("Soda needs to be restocked");
-                }
+            {
+                Console.WriteLine("Soda needs to be restocked");
+            }
             if (chipsnow >= 0 && chipsnow <= chipslow)
             {
                 Console.WriteLine("Chips need to be restocked");
@@ -61,4 +64,5 @@ public class Program
             }
         }
     }
+}
 }
